@@ -17,6 +17,187 @@
 /* Wide Mobile Layout: 480px */
 
 
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+
+.icon-bar {
+    display: none;
+}
+
+
+/* Style the icon bar links */
+
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 8px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+
+
+/* Style the social media icons with color, if you want */
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.instagram {
+    background: #7e55ee;
+    color: white;
+}
+
+.google {
+    background: #dd4b39;
+    color: white;
+}
+
+.linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.youtube {
+    background: #bb0000;
+    color: white;
+}
+
+
+/* Style icon bar cell */
+
+.icon-bar-cel {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-80%, -50%);
+    margin: 0;
+    margin-left: 10%;
+    padding: 0;
+    display: flex;
+}
+
+.icon-bar-cel li {
+    list-style: none;
+}
+
+.icon-bar-cel li a {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: block;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(0deg, #ddd, #fff);
+    transition: .5s;
+}
+
+.icon-bar-cel li a:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+
+.icon-bar-cel li a .fa {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: linear-gradient(0deg, #fff, #ddd);
+    border-radius: 50%;
+    line-height: calc(60px - 12px);
+    font-size: 24px;
+    color: #262626;
+    transition: .5s;
+}
+
+.icon-bar-cel li:nth-child(1) a:hover .fa {
+    color: #3b5998;
+}
+
+.icon-bar-cel li:nth-child(2) a:hover .fa {
+    color: #00aced;
+}
+
+.icon-bar-cel li:nth-child(3) a:hover .fa {
+    color: #dd4b39;
+}
+
+.icon-bar-cel li:nth-child(4) a:hover .fa {
+    color: #007bb6;
+}
+
+.icon-bar-cel li:nth-child(5) a:hover .fa {
+    color: #e4405f;
+}
+
+.coluna {
+    margin-top: 25%;
+}
+
+.coluna h1 {
+    text-shadow: 0.1em 0.1em 0.2em white;
+}
+
+.coluna p {
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+.iframe {
+    width: 100%;
+}
+
+@media (min-width:768px) {
+    .coluna {
+        margin-top: 5%;
+    }
+    .coluna h1 {
+        text-shadow: none;
+    }
+    .coluna p {
+        text-shadow: none;
+    }
+    .icon-bar {
+        display: block;
+        position: fixed;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .icon-bar-cel {
+        display: none;
+    }
+}
+
+@media (min-width:1024px) {
+    .coluna h1 {
+        text-shadow: none;
+    }
+    .coluna p {
+        text-shadow: none;
+    }
+    .icon-bar {
+        display: block;
+        position: fixed;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .icon-bar-cel {
+        display: none;
+    }
+}
+
+
 /* Section Gaps css
 ============================================================================================ */
 
@@ -113,18 +294,18 @@
 .product_description_area .nav.nav-tabs li a.active,
 .blog-pagination .page-item.active .page-link,
 .single-footer-widget .click-btn {
-    background: -webkit-linear-gradient(90deg, #4e4e4e 0%, #000000 100%);
-    background: -moz-linear-gradient(90deg, #4e4e4e 0%, #000000 100%);
-    background: -o-linear-gradient(90deg, #4e4e4e 0%, #000000 100%);
-    background: linear-gradient(90deg, #4e4e4e 0%, #000000 100%);
+    background: -webkit-linear-gradient(90deg, #636161 0%, #000000 100%);
+    background: -moz-linear-gradient(90deg, #636161 0%, #000000 100%);
+    background: -o-linear-gradient(90deg, #636161 0%, #000000 100%);
+    background: linear-gradient(90deg, #636161 0%, #000000 100%);
 }
 
 .gradient-bg-reverse,
 #search_input_box {
-    background: -webkit-linear-gradient(270deg, #4e4e4e 0%, #000000 100%);
-    background: -moz-linear-gradient(270deg, #4e4e4e 0%, #000000 100%);
-    background: -o-linear-gradient(270deg, #4e4e4e 0%, #000000 100%);
-    background: linear-gradient(270deg, #4e4e4e 0%, #000000 100%);
+    background: -webkit-linear-gradient(270deg, #636161 0%, #000000 100%);
+    background: -moz-linear-gradient(270deg, #636161 0%, #000000 100%);
+    background: -o-linear-gradient(270deg, #636161 0%, #000000 100%);
+    background: linear-gradient(270deg, #636161 0%, #000000 100%);
 }
 
 .gradient-color,
@@ -132,10 +313,10 @@
 .s_product_text .list li a.active,
 .product_description_area .tab-content .total_rate .box_total h4,
 .single-footer-widget .bb-btn {
-    background: -webkit-linear-gradient(90deg, #4e4e4e 0%, #000000 100%);
-    background: -moz-linear-gradient(90deg, #4e4e4e 0%, #000000 100%);
-    background: -o-linear-gradient(90deg, #4e4e4e 0%, #000000 100%);
-    background: linear-gradient(90deg, #4e4e4e 0%, #000000 100%);
+    background: -webkit-linear-gradient(90deg, #636161 0%, #000000 100%);
+    background: -moz-linear-gradient(90deg, #636161 0%, #000000 100%);
+    background: -o-linear-gradient(90deg, #636161 0%, #000000 100%);
+    background: linear-gradient(90deg, #636161 0%, #000000 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -1816,17 +1997,17 @@ h6 {
 
 @media (max-width: 991px) {
     .organic-breadcrumb {
-        padding-top: 80px;
+        padding-top: 30px;
     }
 }
 
 @media (max-width: 767px) {
     .organic-breadcrumb {
         background: none;
-        background: -webkit-linear-gradient(90deg, #4e4e4e 0%, #000000 100%);
-        background: -moz-linear-gradient(90deg, #4e4e4e 0%, #000000 100%);
-        background: -o-linear-gradient(90deg, #4e4e4e 0%, #000000 100%);
-        background: linear-gradient(90deg, #4e4e4e 0%, #000000 100%);
+        background: -webkit-linear-gradient(90deg, #636161 0%, #000000 100%);
+        background: -moz-linear-gradient(90deg, #636161 0%, #000000 100%);
+        background: -o-linear-gradient(90deg, #636161 0%, #000000 100%);
+        background: linear-gradient(90deg, #636161 0%, #000000 100%);
     }
 }
 
