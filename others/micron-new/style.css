@@ -1,0 +1,185 @@
+.croma{
+    background-color: rgb(27, 175, 27);
+}
+
+.cromo{
+    background-color: rgb(30, 79, 187);
+}
+
+@font-face {
+    font-family: Metropolis;
+    src: url(font/Metropolis-Bold.otf);
+}
+
+@font-face {
+    font-family: MetropolisFina;
+    src: url(font/Metropolis-Medium.otf);
+}
+
+
+
+/*==================================================================*/
+
+
+
+@font-face {
+    font-family: Yan;
+    src: url(font/yan/yantramanav-bold.otf);
+}
+
+@font-face {
+    font-family: Yan2;
+    src: url(font/yan/yantramanav-medium.otf);
+}
+
+
+/*==================================================================*/
+
+
+@font-face {
+    font-family: chivo;
+    src: url(font/chivo/Chivo-Bold.otf);
+}
+
+@font-face {
+    font-family: chivo2;
+    src: url(font/chivo/Chivo-Regular.otf);
+}
+
+
+/*==================================================================*/
+
+
+@font-face {
+    font-family: publica; /* Bom para complemento */
+    src: url(font/publica/publicasans-regular.otf);
+}
+
+@font-face {
+    font-family: publica2;
+    src: url(font/publica/publicasans-regular.otf);
+}
+
+
+/*==================================================================*/
+
+
+@font-face {
+    font-family: vremena;
+    src: url(font/vremena/vremenagroteskbold.otf);
+}
+
+@font-face { /*legal para textos*/
+    font-family: vremena2;
+    src: url(font/vremena/vremenagroteskbook.otf);
+}
+
+
+/*==================================================================*/
+
+
+@font-face {
+    font-family: yorkten;
+    src: url(font/yorkten/yorktennormregular.otf);
+}
+
+@font-face {
+    font-family: yorkten2;
+    src: url(font/yorkten/yorktennormregular.otf);
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.rodape {
+    font-family: vremena2, san-serif;
+    margin-top: auto;
+    background-color: #111111;
+    color: #f7f7f5;
+}
+
+.tituloPrincipal{
+    margin-top: 120px;
+    font-family: Metropolis, sans-serif;
+    color: rgb(245, 241, 241);
+    font-size: 40px;
+}
+
+.titulos{
+    margin-top: 60px;
+    font-family: Metropolis, sans-serif;
+    color: rgb(8, 8, 8);
+    font-size: 40px;
+}
+
+.titulosMobile{
+    margin-top: 40px;
+    font-family: Metropolis, sans-serif;
+    color: rgb(8, 8, 8);
+    font-size: 35px;
+}
+
+.textoPequeno{
+    font-family: chivo2, san-serif;
+    font-size: 18px;
+    color: rgb(70, 70, 70);
+}
+
+.textoPequeno2{
+    font-family: chivo2, san-serif;
+    font-size: 18px;
+    color: rgb(8, 8, 8);
+}
+
+.textoPequenoContato{
+    font-family: chivo2, san-serif;
+    font-size: 18px;
+    color: rgb(8, 8, 8);
+}
+
+.complemento{
+    color: white;
+    font-family: publica, sans-serif;
+    font-size: 30px;
+}
+
+.card-title{
+    font-family: vremena, san-serif;
+}
+
+.card-text{
+    font-family: chivo2, san-serif;
+}
+
+.buttonEnviar{
+    background-color: #21bd13;
+    color: white;
+    border-radius: 3px;
+    padding: 5px 5px;
+    width: 20%;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    font-family: 'Cairo', sans-serif;
+}
+
+
+.capa{
+    background-image: url("img/produtos/fundo.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
