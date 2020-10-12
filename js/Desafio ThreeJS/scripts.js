@@ -108,6 +108,16 @@ function main() {
         }
     }
 
+    // async function loadJSON(url) {
+    //     const req = await fetch(url);
+    //     return req.json();
+    //   }
+    
+    //   async function loadXML(url) {
+    //     const req = await fetch(url);
+    //     return req.xml();
+    //   }
+
     preencheArrayElementosTeste(arrayElements,numObjects);
     posicionaElementosXML(numObjects,arrayElements,idToObject);
 
@@ -169,7 +179,7 @@ function main() {
           this.pickedObject = null;
           this.pickedObjectSavedColor = 0;
         }
-        pick(cssPosition, scene, camera, time) {
+        pick(cssPosition, scene, camera) {
           const {pickingTexture, pixelBuffer} = this;
     
           // restore the color if there is a picked object
@@ -215,8 +225,9 @@ function main() {
             // save its color
             this.pickedObjectSavedColor = this.pickedObject.material.emissive.getHex();
             // set its emissive color to flashing red/yellow
-            this.pickedObject.material.emissive.setHex((time * 8) % 2 > 1 ? 0xFFFF00 : 0xFF0000);
+            this.pickedObject.material.emissive.setHex((8) % 2 > 1 ? 0xFFFF00 : 0xFF0000);
           }
+          return (id);
         }
     }
     
@@ -242,8 +253,6 @@ function main() {
           camera.aspect = canvas.clientWidth / canvas.clientHeight;
           camera.updateProjectionMatrix();
         }
-    
-        pickHelper.pick(pickPosition, pickingScene, camera, time);
     
         renderer.render(scene, camera);
         renderer.render(scene2, camera2);
@@ -276,24 +285,16 @@ function main() {
     }
 
     function displayInfo(){
-        alert("Info displayed");
+        let pickedObjectId = pickHelper.pick(pickPosition, pickingScene, camera);
+        if(pickedObjectId>0){
+            alert(pickedObjectId);
+        }
     }
     
     window.addEventListener('mousemove', setPickPosition);
+    window.addEventListener("click", displayInfo);
     window.addEventListener('mouseout', clearPickPosition);
     window.addEventListener('mouseleave', clearPickPosition);
-    // window.addEventListener("click", (event) => {
-    //     // prevent the window from scrolling
-    //     event.preventDefault();
-    //     setPickPosition(event.touches[0]);
-    // }, {passive: false});
-    
-    // window.addEventListener('touchmove', (event) => {
-    //     setPickPosition(event.touches[0]);
-    // });
-    
-    // window.addEventListener('touchend', clearPickPosition);
-
     window.addEventListener('touchstart', (event) => {
         // prevent the window from scrolling
         event.preventDefault();
