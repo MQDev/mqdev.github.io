@@ -1,0 +1,42 @@
+<objetos>
+   <objeto category="BoxGeometry">
+       <titulo>Caixa com legendas sobre o que é o projeto</titulo>
+       <posx>54</posx>
+       <posy>48</posy>
+       <posz>27</posz>
+       <texto>
+            <tituloTexto>Quadrado 1</tituloTexto>
+            <descTexto>Lorem ipsum dolor sit amet consectetur adipisicing elit. </descTexto>
+       </texto> 
+    </objeto>
+   <objeto category="BoxGeometry">
+       <titulo>Caixa com legendas sobre o que é o projeto</titulo>
+       <posx>89</posx>
+       <posy>-60</posy>
+       <posz>100</posz>
+       <texto>
+            <tituloTexto>Quadrado 2</tituloTexto>
+            <descTexto>Doloribus consequuntur distinctio corporis quisquam eveniet? </descTexto>
+       </texto> 
+    </objeto>
+    <objeto category="BoxGeometry">
+       <titulo>Caixa com legendas sobre o que é o projeto</titulo>
+       <posx>-41</posx>
+       <posy>91</posy>
+       <posz>-10</posz>
+       <texto>
+            <tituloTexto>Quadrado 3</tituloTexto>
+            <descTexto>Ipsum officia qui quaerat assumenda?</descTexto>
+       </texto> 
+    </objeto>
+    <objeto category="BoxGeometry">
+       <titulo>Caixa com legendas sobre o que é o projeto</titulo>
+       <posx>0</posx>
+       <posy>50</posy>
+       <posz>68</posz>
+       <texto>
+            <tituloTexto>Quadrado 4</tituloTexto>
+            <descTexto>Fuga incidunt quam eligendi, dolorem unde commodi quia repudiandae quaerat sapiente.</descTexto>
+       </texto> 
+    </objeto>
+</objetos>
