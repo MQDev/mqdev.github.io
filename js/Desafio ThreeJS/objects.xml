@@ -1,9 +1,18 @@
 <objetos>
    <objeto category="BoxGeometry">
        <titulo>Caixa com legendas sobre o que é o projeto</titulo>
-       <posx>54</posx>
-       <posy>48</posy>
-       <posz>27</posz>
+       <!-- Posição: [-20,20] em x,y e z -->
+       <posx>18</posx>
+       <posy>-3</posy>
+       <posz>13</posz>
+       <!-- Rotação: [rand(Math.PI), rand(Math.PI), 0] -->
+       <rotx>1,4</rotx>
+       <roty>2,77</roty>
+       <rotz>0</rotz>
+       <!-- Escala: [3,6] -->
+       <escx>3</escx>
+       <escy>4</escy>
+       <escz>3</escz>
        <texto>
             <tituloTexto>Quadrado 1</tituloTexto>
             <descTexto>Lorem ipsum dolor sit amet consectetur adipisicing elit. </descTexto>
