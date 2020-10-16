@@ -116,9 +116,9 @@ function main() {
         const escy = (infoElementos.getElementsByTagName("escy"));
         const escz = (infoElementos.getElementsByTagName("escz"));
 
-        let posix = posx[0].firstChild;
+        // let posix = posx[0].firstChild;
 
-        console.log(posix);
+        // console.log(posix);
 
         class elemento {
             constructor(id) {
