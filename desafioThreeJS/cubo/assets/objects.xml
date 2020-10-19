@@ -1,0 +1,26 @@
+<objetos>
+   <objeto category="Painel">
+       <titulo>Painel A9-41</titulo>
+       <temperatura>40ºC</temperatura>
+       <funcionamento>not ok</funcionamento>
+       <posx>0</posx>
+       <posy>5</posy>
+       <posz>0</posz>
+    </objeto>
+    <objeto category="Painel">
+       <titulo>Painel A8-37</titulo>
+       <temperatura>25ºC</temperatura>
+       <funcionamento>ok.</funcionamento>
+       <posx>-20</posx>
+       <posy>0</posy>
+       <posz>0</posz>
+    </objeto>
+    <objeto category="Painel">
+       <titulo>Painel A8-38</titulo>
+       <temperatura>23ºC</temperatura>
+       <funcionamento>ok.</funcionamento>
+       <posx>20</posx>
+       <posy>0</posy>
+       <posz>0</posz>
+    </objeto>
+</objetos>
