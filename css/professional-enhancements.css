@@ -1,0 +1,185 @@
+/* Professional Enhancements for Senior Developer Portfolio */
+
+/* Footer Social Links */
+.footer-social {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer-social li a {
+    color: #666;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-social li a:hover {
+    color: #667eea;
+}
+
+/* Portfolio Item Enhancements */
+.portfolio-item .overlay {
+    transition: all 0.4s ease;
+}
+
+.portfolio-item:hover .overlay {
+    background: rgba(102, 126, 234, 0.95);
+}
+
+.portfolio-item-content h3 {
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.portfolio-item-content p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Expertise Cards Hover Effect */
+.expertise-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.expertise-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Service Cards Enhancement */
+.feature-v1 {
+    transition: transform 0.3s ease;
+}
+
+.feature-v1:hover {
+    transform: translateY(-5px);
+}
+
+.feature-v1 h3 {
+    font-weight: 700;
+    color: #333;
+}
+
+/* CTA Buttons */
+.btn-outline-pill {
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.btn-outline-pill:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+/* Stats Numbers */
+.stats-number {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Professional Badge */
+.professional-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+/* Enhanced Typography */
+.lead {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Smooth Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Gradient Text */
+.gradient-text {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Professional Card Style */
+.pro-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.pro-card:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+    .footer-social {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .lead {
+        font-size: 1rem;
+    }
+}
+
+/* Trust Indicators */
+.trust-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(102, 126, 234, 0.1);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #667eea;
+    font-weight: 600;
+}
+
+/* Section Dividers */
+.section-divider {
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    margin: 1rem auto;
+    border-radius: 2px;
+}

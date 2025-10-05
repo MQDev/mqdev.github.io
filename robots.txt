@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://mqdev.github.io/sitemap.xml
+
+# Disallow admin/test pages
+Disallow: /admin/
+Disallow: /test/
+Disallow: /*.txt$
+
+# Allow CSS and JS
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Crawl delay
+Crawl-delay: 1

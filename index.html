@@ -1,429 +1,920 @@
-<!doctype html>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-BR">
 
 <head>
-    <title>MQDev</title>
+    <!-- Meta Tags Essenciais -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="propeller" content="58af4b7af32fe1841800ebce1a162901">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="robots" content="all" />
-    <meta name="rating" content="general" />
-    <meta name="distribution" content="global" />
-    <meta name="language" content="pt-br" />
-    <meta property="locale" content="pt-br" />
-    <meta name="content-language" content="portuguese" />
-    <meta name="doc-class" content="completed" />
-    <meta name="description" content="Apresentação dos Desenvolvedores e serviços prestados">
-    <meta name="abstract" content="Trabalho realizado por cada integrante" />
-    <meta name="keywords" content="site, website, marketing, arte gráfica, design, html, css, bootstrap, javascript, php" />
-    <meta name="title" content="M2 Solutions" />
-    <meta name="identifier-url" content="mqdev.github.com" />
-    <meta itemprop="url" content="mqdev.github.com">
-    <meta name="author" content="MQDev" />
-    <meta name="reply-to" content="mqdev@pm.me" />
+    <!-- SEO Otimizado -->
+    <title>MQDev - Desenvolvimento de Software e Sistemas Sob Medida | Jaraguá do Sul - SC</title>
+    <meta name="description"
+        content="MQDev - Empresa especializada em desenvolvimento de software, sistemas web, aplicativos mobile e soluções digitais personalizadas. Atendimento em Jaraguá do Sul e região. Solicite seu orçamento!">
+    <meta name="keywords"
+        content="desenvolvimento de software, criação de sistemas, desenvolvimento web, aplicativos mobile, software sob medida, sistemas personalizados, empresa de tecnologia, Jaraguá do Sul, Santa Catarina, MQDev">
+    <meta name="author" content="MQDev - Soluções em Tecnologia">
     <meta name="robots" content="index, follow">
+    <meta name="language" content="Portuguese">
+    <meta name="revisit-after" content="7 days">
 
-    <link rel="stylesheet" href="css/vendor/icomoon/style.css">
-    <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/vendor/animate.min.css">
-    <link rel="stylesheet" href="css/vendor/aos.css">
-    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="css/vendor/jquery.fancybox.min.css">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mqdev.github.io/">
+    <meta property="og:title" content="MQDev - Desenvolvimento de Software e Sistemas Sob Medida">
+    <meta property="og:description"
+        content="Soluções tecnológicas personalizadas para o seu negócio. Desenvolvimento web, mobile e sistemas integrados.">
+    <meta property="og:image" content="https://mqdev.github.io/images/mqdev-og.jpg">
+    <meta property="og:locale" content="pt_BR">
 
-    <!-- Ícone -->
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mqdev.github.io/">
+    <meta property="twitter:title" content="MQDev - Desenvolvimento de Software">
+    <meta property="twitter:description" content="Soluções tecnológicas personalizadas para o seu negócio">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://mqdev.github.io/">
+
+    <!-- Favicon -->
     <link rel="icon" href="images/icon1.png" type="image/x-icon">
 
-    <!-- Theme Style -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Schema.org para Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "MQDev",
+      "description": "Desenvolvimento de Software e Sistemas Sob Medida",
+      "url": "https://mqdev.github.io",
+      "logo": "https://mqdev.github.io/images/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+55-42-99114-9052",
+        "contactType": "Vendas",
+        "areaServed": "BR",
+        "availableLanguage": ["Portuguese"]
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Jaraguá do Sul",
+        "addressRegion": "SC",
+        "addressCountry": "BR"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/mqdev",
+        "https://github.com/mqdev"
+      ]
+    }
+    </script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175631723-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'UA-175631723-1');
     </script>
 
-
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/mqdev-corporate.css">
 </head>
 
-<body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
-
-    <nav class="unslate_co--site-mobile-menu">
-        <div class="close-wrap d-flex">
-            <a href="#" class="d-flex ml-auto js-menu-toggle">
-                <span class="close-label">Fechar</span>
-                <div class="close-times">
-                    <span class="bar1"></span>
-                    <span class="bar2"></span>
-                </div>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <span class="logo-text">MQ</span><span class="logo-accent">Dev</span>
             </a>
-        </div>
-        <div class="site-mobile-inner"></div>
-    </nav>
 
-
-    <div class="unslate_co--site-wrap">
-
-        <div class="unslate_co--site-inner">
-
-            <div class="lines-wrap">
-                <div class="lines-inner">
-                    <div class="lines"></div>
-                </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Início</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Serviços</a></li>
+                    <li class="nav__item"><a href="#solutions" class="nav__link">Soluções</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">Cases</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contato</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close">✕</div>
             </div>
-            <!-- END lines -->
 
-            <nav class="unslate_co--site-nav site-nav-target">
+            <div class="nav__toggle" id="nav-toggle">☰</div>
+        </nav>
+    </header>
 
-                <div class="container">
-
-                    <div class="row align-items-center justify-content-between text-left">
-                        <div class="col-md-5 text-right">
-                            <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
-                                <li class="has-children"><a href="#home-section" class="nav-link">Início</a></li>
-                                <li><a href="#portfolio-section" class="nav-link">Portfólio</a></li>
-
-                            </ul>
-                        </div>
-                        <div class="site-logo pos-absolute">
-                            <a href="index.html" class="unslate_co--site-logo">MQDev<span>.</span></a>
-                        </div>
-                        <div class="col-md-5 text-right text-lg-left">
-                            <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
-                                <li><a href="#about-section" class="nav-link">Sobre</a></li>
-                                <li><a href="#services-section" class="nav-link">Serviços</a></li>
-                                <li><a href="#contact-section" class="nav-link">Contato</a></li>
-                            </ul>
-
-                            <ul class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none">
-                                <li><a href="#" class="js-menu-toggle">Menu</a></li>
-                            </ul>
-
-                        </div>
-                    </div>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero__container">
+            <div class="hero__content">
+                <div class="hero__badge">
+                    <span class="badge-dot"></span>
+                    <span>Disponível para novos projetos</span>
                 </div>
-
-            </nav>
-            <!-- END nav -->
-
-            <div class="cover-v1 jarallax" style="background-image: url('images/cover.jpg');" id="home-section">
-                <div class="container">
-                    <div class="row align-items-center">
-
-                        <div class="col-md-7 mx-auto text-center">
-                            <h1 class="heading gsap-reveal-hero">MQDev<span style="color: rgb(168, 29, 29);">.</span></h1>
-                            <h2 class="subheading gsap-reveal-hero">Desenvolvedor de Softwares</h2>
-                        </div>
-
-                    </div>
+                <h1 class="hero__title">
+                    Desenvolvimento
+                    <span class="title-highlight">sob medida</span>
+                    para empresas que
+                    <span class="title-underline">pensam grande</span>
+                </h1>
+                <p class="hero__description">
+                    De startups a indústrias consolidadas, criamos soluções tecnológicas
+                    que resolvem problemas reais. Código limpo, arquitetura sólida e
+                    entrega no prazo — sem desculpas.
+                </p>
+                <div class="hero__cta">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Conversar sobre seu projeto</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M1 8h14M8 1l7 7-7 7" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                    </a>
+                    <a href="#portfolio" class="btn btn-text">
+                        <span>Ver projetos realizados</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M8 1v14M1 8h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </a>
                 </div>
-
-
-                <a href="#portfolio-section" class="mouse-wrap smoothscroll">
-                    <span class="mouse">
-            <span class="scroll"></span>
-                    </span>
-                    <span class="mouse-label">Role p/ baixo</span>
-                </a>
-
-            </div>
-            <!-- END .cover-v1 -->
-
-
-            <div class="unslate_co--section" id="portfolio-section">
-                <div class="container">
-
-
-                    <div class="relative">
-                        <div class="loader-portfolio-wrap">
-                            <div class="loader-portfolio"></div>
-                        </div>
+                <div class="hero__proof">
+                    <div class="proof-item">
+                        <strong>7 anos</strong>
+                        <span>de experiência</span>
                     </div>
-                    <div id="portfolio-single-holder"></div>
-
-                    <div class="portfolio-wrapper">
-
-                        <div class="d-flex align-items-center mb-4 gsap-reveal gsap-reveal-filter">
-                            <h2 class="mr-auto heading-h2"><span class="gsap-reveal">Portfólio</span></h2>
-                        </div>
-
-
-
-                        <div id="posts" class="row gutter-isotope-item">
-                            <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                                <a href="https://quost.github.io/planilha-referencias-html-css-js/" target="blank" class="portfolio-item isotope-item gsap-reveal-img" data-id="1">
-                                    <div class="overlay">
-                                        <span class="wrap-icon icon-link2"></span>
-                                        <div class="portfolio-item-content">
-                                            <h3>Planilha de Referências</h3>
-                                            <p>Site, Logo, Design, Conteúdos</p>
-                                        </div>
-                                    </div>
-                                    <img src="images/plan-ref.png" class="lazyload  img-fluid" alt="Images" />
-                                </a>
-                            </div>
-                            <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                                <a href="https://flagbr.github.io/" target="blank" class="portfolio-item isotope-item gsap-reveal-img" data-id="2">
-                                    <div class="overlay">
-                                        <span class="wrap-icon icon-link2"></span>
-                                        <div class="portfolio-item-content">
-                                            <h3>Flag BR</h3>
-                                            <p>Site, arte visual, design</p>
-                                        </div>
-                                    </div>
-                                    <img src="images/flagbr.png" class="lazyload  img-fluid" alt="Images" />
-                                </a>
-                            </div>
-
-                            <div class="item branding packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                                <a href="https://quost.github.io/site-jogos" target="blank" class="portfolio-item isotope-item gsap-reveal-img" data-id="3">
-                                    <div class="overlay">
-                                        <span class="wrap-icon icon-link2"></span>
-                                        <div class="portfolio-item-content">
-                                            <h3>Galeria de Jogos</h3>
-                                            <p>Criação de Jogos, Adaptação ao Template</p>
-                                        </div>
-                                    </div>
-                                    <img src="images/gale-jogos.png" class="lazyload  img-fluid" alt="Images" />
-                                </a>
-                            </div>
-                        </div>
+                    <div class="proof-divider"></div>
+                    <div class="proof-item">
+                        <strong>50+ projetos</strong>
+                        <span>entregues com sucesso</span>
+                    </div>
+                    <div class="proof-divider"></div>
+                    <div class="proof-item">
+                        <strong>30+ clientes</strong>
+                        <span>em 3 estados</span>
                     </div>
                 </div>
             </div>
-            <!-- <div align="center" data-mvc-banner="leaderboard"></div> -->
-            <div class="unslate_co--section" id="about-section">
-                <div class="container">
-
-                    <div class="section-heading-wrap text-center mb-5">
-                        <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">Sobre</span></h2>
-                        <span class="gsap-reveal">
-                          <img src="images/divider.png" alt="divider" width="76">
-                        </span>
+            <div class="hero__visual">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="window-title">projeto-real.tsx</div>
                     </div>
-
-                    <div class="row mt-5 justify-content-between">
-                        <div class="col-lg-7 mb-5 mb-lg-0">
-                            <figure class="dotted-bg gsap-reveal-img ">
-                                <img src="images/mq.png" alt="Image" class="img-fluid">
-                            </figure>
-                        </div>
-                        <div class="col-lg-4 pr-lg-5">
-                            <h3 class="mb-4 heading-h3"><span class="gsap-reveal">Nós podemos fazer juntos!</span></h3>
-                            <p class="lead gsap-reveal">Fornecemos serviços com qualidade, com um pós-venda sério, que busca ser uma parceira em tecnologia. </p>
-                            <p class="mb-4 gsap-reveal" style="text-align: justify;text-justify: inter-word;"> A <a href="#">MQDev</a> surge baseada em valores éticos como comprometimento, respeito ao cliente, garra e agilidade e busca seu espaço no mercado.</p>
-                            <p class="mb-4 gsap-reveal" style="text-align: justify;text-justify: inter-word;"> Técnico em Informática e estudante de Sistemas de Informação, <a href="https://www.linkedin.com/in/matheusquost/">Matheus</a> é quem comanda este time!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="unslate_co--section" id="services-section">
-                <div class="container">
-
-                    <div class="section-heading-wrap text-center mb-5">
-                        <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">Serviços</span></h2>
-                        <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
-                    </div>
-
-                    <div class="row gutter-v3">
-                        <div class="col-md-6 col-lg-4 mb-4">
-                            <div class="feature-v1" data-aos="fade-up" data-aos-delay="0">
-                                <div class="wrap-icon mb-3">
-                                    <img src="images/svg/001-options.svg" alt="Image" width="45">
-                                </div>
-                                <h3>Estratégias <br> Digitais</h3>
-                                <p>Planejamos e executamos projetos de marketing e publicidade inovadores e diferenciados para a sua empresa. </p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mb-4">
-                            <div class="feature-v1" data-aos="fade-up" data-aos-delay="100">
-                                <div class="wrap-icon mb-3">
-                                    <img src="images/svg/002-chat.svg" alt="Icon" width="45">
-                                </div>
-                                <h3>Web <br> Design</h3>
-                                <p>Criação de sites eficientes e orientados pelas necessidades do seu negócio. </p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mb-4">
-                            <div class="feature-v1" data-aos="fade-up" data-aos-delay="200">
-                                <div class="wrap-icon mb-3">
-                                    <img src="images/svg/003-contact-book.svg" alt="Image" class="img-fluid" width="45">
-                                </div>
-                                <h3>Aplicações <br> Mobile</h3>
-                                <p>Desenvolvimento de aplicativos móveis e criação de soluções mobile conforme as demandas do cliente. </p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-lg-4 mb-4">
-                            <div class="feature-v1" data-aos="fade-up" data-aos-delay="0">
-                                <div class="wrap-icon mb-3">
-                                    <img src="images/svg/004-percentage.svg" alt="Image" width="45">
-                                </div>
-                                <h3>Identidade <br> Virtual</h3>
-                                <p>Criação de logos, artes visuais para construir sua identidade visual/digital. </p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mb-4">
-                            <div class="feature-v1" data-aos="fade-up" data-aos-delay="200">
-                                <div class="wrap-icon mb-3">
-                                    <img src="images/svg/005-line-chart.svg" alt="Image" width="45">
-                                </div>
-                                <h3>Sistemas de <br> Informação</h3>
-                                <p>Sistemas de armazenamento ou recuperação de dados / Criação, adaptação e instalação programas / Montagem e gerenciamento de banco de dados </p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mb-4">
-                            <div class="feature-v1" data-aos="fade-up" data-aos-delay="100">
-                                <div class="wrap-icon mb-3">
-                                    <img src="images/svg/006-goal.svg" alt="Image" width="45">
-                                </div>
-                                <h3>Consultoria / <br> Suporte</h3>
-                                <p>Tendo problemas com softwares? Podemos dar um encaminhamento ou então suporte aos seus negócios. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Aqui vpu criar uma seção de anúncio -->
-            <!-- Colocar esse link da Amazon -->
-            <!-- https://amzn.to/4eAYePf --> 
-            
-            <div class="unslate_co--section" id="advertise-section">
-                <div class="container">
-                    <!-- <div class="section-heading-wrap text-center mb-5">
-                        <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">Anúncio</span></h2>
-                        <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
-                    </div> -->
-                    <div class="row justify-content-center">
-                        <div class="col-md-12 text-center">
-                            <div data-mvc-banner="leaderboard">
-                                <!-- Aqui vai uma imagem  -->
-                                <a href="https://amzn.to/4eAYePf" target="blank"><img src="https://ir-br.amazon-adsystem.com/e/ir?t=mq18041999-20&l=ur2&o=33" width="728" height="90" border="0" alt="" style="border:none !important; margin:0px !important;" /></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-              
-
-            <div class="unslate_co--section" id="contact-section">
-                <div class="container">
-                    <div class="section-heading-wrap text-center mb-5">
-                        <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">Entre em contato</span></h2>
-                        <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
-                    </div>
-
-
-                    <div class="row justify-content-between">
-
-                        <div class="col-md-6">
-                            <form action="https://formspree.io/mgenbvel" method="POST" class="form-outline-style-v1">
-                                <div class="form-group row mb-0">
-                                    <div class="col-lg-6 form-group gsap-reveal">
-                                        <input name="Nome" type="text" class="form-control" placeholder="Nome">
-                                    </div>
-
-                                    <div class="col-lg-6 form-group gsap-reveal">
-                                        <input type="text" name="Email" class="form-control" placeholder="Email">
-                                    </div>
-                                    <div class="col-lg-12 form-group gsap-reveal">
-                                        <textarea name="Mensagem" id="message" cols="30" rows="7" class="form-control" placeholder="Escreva sua menagem..."></textarea>
-                                    </div>
-                                </div>
-                                <div class="form-group row gsap-reveal">
-                                    <div class="col-md-12 d-flex align-items-center">
-                                        <input type="submit" class="btn btn-outline-pill btn-custom-light mr-3" value="Enviar Mensagem">
-                                        <span class="submitting"></span>
-                                    </div>
-                                </div>
-                            </form>
-                            <form action="https://formspree.io/mgenbvel" method="POST" id="contactForm">
-
-                            </form>
-                            <div id="form-message-warning" class="mt-4"></div>
-                            <div id="form-message-success">
-                                Sua mensagem foi enviada, obrigado!
-                            </div>
-
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="contact-info-v1">
-                                <div class="gsap-reveal d-block">
-                                    <span class="d-block contact-info-label">Email</span>
-                                    <a href="mailto:mqdev@pm.me?subject=Contato%20através%20do%20site" class="contact-info-val">mqdev@pm.me</a>
-                                </div>
-                                <div class="gsap-reveal d-block">
-                                    <span class="d-block contact-info-label">Celular</span>
-                                    <a href="https://api.whatsapp.com/send?phone=5542991149052&text=Ol%C3%A1!%20Fa%C3%A7o%20contato%20atrav%C3%A9s%20do%20site." target="blank" class="contact-info-val">+55 42 99114-9052</a>
-                                </div>
-                                <div class="gsap-reveal d-block">
-                                    <span class="d-block contact-info-label">Endereço</span>
-                                    <a href="https://g.page/mqdev?share" target="blank"><address class="contact-info-val">Balneário Camboriú,<br>SC, Brasil</address></a>
-                                </div>
-                            </div>
-                        </div>
-
+                    <div class="window-content">
+                        <pre><code><span class="code-keyword">const</span> <span class="code-function">buildSolution</span> = <span class="code-bracket">(</span><span class="code-param">ideia</span><span class="code-bracket">)</span> <span class="code-operator">=></span> <span class="code-bracket">{</span>
+  <span class="code-keyword">return</span> <span class="code-bracket">{</span>
+    arquitetura<span class="code-operator">:</span> <span class="code-string">'escalável'</span><span class="code-operator">,</span>
+    código<span class="code-operator">:</span> <span class="code-string">'limpo'</span><span class="code-operator">,</span>
+    testes<span class="code-operator">:</span> <span class="code-string">'completos'</span><span class="code-operator">,</span>
+    deploy<span class="code-operator">:</span> <span class="code-string">'automatizado'</span><span class="code-operator">,</span>
+    resultado<span class="code-operator">:</span> <span class="code-string">'✓ Garantido'</span>
+  <span class="code-bracket">}</span>
+<span class="code-bracket">}</span></code></pre>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- END .unslate_co-site-inner -->
+    </section>
 
-        <footer class="unslate_co--footer unslate_co--section">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-7">
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">O que fazemos</span>
+                <h2 class="section__title">Soluções completas para seu negócio</h2>
+                <p class="section__description">
+                    Do planejamento à entrega final, cuidamos de tudo para que você possa focar no que realmente importa
+                </p>
+            </div>
 
-                        <div class="footer-site-logo"><a href="#">MQDev<span>.</span></a></div>
+            <div class="services__grid">
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg width="32" height="32">
+                            <use href="images/icons.svg#icon-web" />
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Sites e Sistemas Web</h3>
+                    <p class="service-card__description">
+                        Criamos sites profissionais, lojas virtuais e sistemas personalizados
+                        que funcionam em qualquer dispositivo.
+                    </p>
+                    <ul class="service-card__features">
+                        <li>Sites institucionais modernos</li>
+                        <li>Lojas virtuais completas</li>
+                        <li>Sistemas de gestão sob medida</li>
+                    </ul>
+                </div>
 
-                        <p class="site-copyright">
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg width="32" height="32">
+                            <use href="images/icons.svg#icon-mobile" />
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Aplicativos para Celular</h3>
+                    <p class="service-card__description">
+                        Desenvolvemos apps para iPhone e Android que seus clientes vão
+                        adorar usar no dia a dia.
+                    </p>
+                    <ul class="service-card__features">
+                        <li>Apps para iOS e Android</li>
+                        <li>Funciona sem internet</li>
+                        <li>Notificações e atualizações</li>
+                    </ul>
+                </div>
 
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;
-                            <script>
-                                document.write(new Date().getFullYear());
-                            </script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg width="32" height="32">
+                            <use href="images/icons.svg#icon-api" />
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Integração de Sistemas</h3>
+                    <p class="service-card__description">
+                        Conectamos diferentes sistemas para automatizar processos e
+                        eliminar trabalho manual.
+                    </p>
+                    <ul class="service-card__features">
+                        <li>Integração com ERPs e CRMs</li>
+                        <li>Automação de processos</li>
+                        <li>Sincronização de dados</li>
+                    </ul>
+                </div>
 
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg width="32" height="32">
+                            <use href="images/icons.svg#icon-design" />
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Design Profissional</h3>
+                    <p class="service-card__description">
+                        Criamos interfaces bonitas e fáceis de usar que fazem seus
+                        clientes comprarem mais.
+                    </p>
+                    <ul class="service-card__features">
+                        <li>Design moderno e atrativo</li>
+                        <li>Fácil de usar em qualquer tela</li>
+                        <li>Identidade visual completa</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <use href="images/icons.svg#icon-cloud" />
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Infraestrutura e Cloud</h3>
+                    <p class="service-card__description">
+                        Configuramos servidores, hospedagem e segurança para
+                        manter seu sistema funcionando 24 horas.
+                    </p>
+                    <ul class="service-card__features">
+                        <li>Configuração de servidores</li>
+                        <li>Backup automático de dados</li>
+                        <li>Segurança e proteção</li>
+                    </ul>
+                </div>
+
+                <div class="service-card service-card--highlight">
+                    <div class="service-card__badge">Tecnologia em Alta</div>
+                    <div class="service-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                            <path d="M2 17l10 5 10-5" />
+                            <path d="M2 12l10 5 10-5" />
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Inteligência Artificial e Automação</h3>
+                    <p class="service-card__description">
+                        Chatbots inteligentes que atendem seus clientes 24/7 e
+                        automação que economiza tempo e dinheiro do seu negócio.
+                    </p>
+                    <ul class="service-card__features">
+                        <li>Chatbots para WhatsApp e site</li>
+                        <li>Atendimento automático de clientes</li>
+                        <li>Automação de processos repetitivos</li>
+                        <li>Integração com ChatGPT e IA</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg width="32" height="32">
+                            <use href="images/icons.svg#icon-support" />
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Suporte Contínuo</h3>
+                    <p class="service-card__description">
+                        Estamos sempre disponíveis para resolver problemas, fazer
+                        melhorias e tirar dúvidas.
+                    </p>
+                    <ul class="service-card__features">
+                        <li>Atendimento rápido</li>
+                        <li>Correção de problemas urgentes</li>
+                        <li>Melhorias constantes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section class="section solutions" id="solutions">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Casos de uso</span>
+                <h2 class="section__title">Soluções por segmento</h2>
+            </div>
+
+            <div class="solutions__grid">
+                <div class="solution-item">
+                    <div class="solution-item__icon">
+                        <svg width="28" height="28">
+                            <use href="images/icons.svg#icon-ecommerce" />
+                        </svg>
+                    </div>
+                    <h3>E-commerce</h3>
+                    <p>Lojas virtuais de alta conversão com checkout otimizado e gestão completa</p>
+                </div>
+                <div class="solution-item">
+                    <div class="solution-item__icon">
+                        <svg width="28" height="28">
+                            <use href="images/icons.svg#icon-business" />
+                        </svg>
+                    </div>
+                    <h3>Gestão Empresarial</h3>
+                    <p>ERPs e sistemas de gestão que automatizam processos e aumentam produtividade</p>
+                </div>
+                <div class="solution-item">
+                    <div class="solution-item__icon">
+                        <svg width="28" height="28">
+                            <use href="images/icons.svg#icon-education" />
+                        </svg>
+                    </div>
+                    <h3>Educação (EdTech)</h3>
+                    <p>Plataformas EAD, LMS e ferramentas educacionais modernas e engajantes</p>
+                </div>
+                <div class="solution-item">
+                    <div class="solution-item__icon">
+                        <svg width="28" height="28">
+                            <use href="images/icons.svg#icon-health" />
+                        </svg>
+                    </div>
+                    <h3>Saúde (HealthTech)</h3>
+                    <p>Prontuários eletrônicos, agendamentos e soluções para clínicas e hospitais</p>
+                </div>
+                <div class="solution-item">
+                    <div class="solution-item__icon">
+                        <svg width="28" height="28">
+                            <use href="images/icons.svg#icon-industry" />
+                        </svg>
+                    </div>
+                    <h3>Indústria 4.0</h3>
+                    <p>Controle de produção, IoT industrial e dashboards de performance</p>
+                </div>
+                <div class="solution-item">
+                    <div class="solution-item__icon">
+                        <svg width="28" height="28">
+                            <use href="images/icons.svg#icon-food" />
+                        </svg>
+                    </div>
+                    <h3>Food & Delivery</h3>
+                    <p>Apps de delivery, gestão de pedidos e cardápios digitais interativos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section portfolio" id="portfolio">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Projetos realizados</span>
+                <h2 class="section__title">Trabalhos que geraram resultados reais</h2>
+            </div>
+
+            <div class="portfolio__grid">
+                <div class="portfolio-card">
+                    <div class="portfolio-card__image">
+                        <img src="images/urbsmercado.png" alt="Urbs Mercado - Landing Page" loading="lazy">
+                    </div>
+                    <div class="portfolio-card__content">
+                        <h3 class="portfolio-card__title">Urbs Mercado</h3>
+                        <p class="portfolio-card__description">
+                            Landing page moderna para minimercado autônomo 24 horas.
+                            Site institucional com design atrativo que apresenta o conceito
+                            inovador e atrai investidores.
                         </p>
+                        <div class="portfolio-card__tags">
+                            <span class="tag">Site Institucional</span>
+                            <span class="tag">Landing Page</span>
+                            <span class="tag">Design Moderno</span>
+                        </div>
+                        <a href="https://urbsmercado.com.br" target="_blank" class="portfolio-card__link"
+                            onclick="gtag('event', 'click', {'event_category': 'portfolio', 'event_label': 'Urbs Mercado'});">
+                            Ver Projeto →
+                        </a>
+                    </div>
+                </div>
 
-                        <!-- <a target="_blank" href="https://www.amazon.com.br/b?_encoding=UTF8&tag=mq18041999-20&linkCode=ur2&linkId=6275112c8198ca58a747b69648c5fdce&camp=1789&creative=9325&node=16339926011">!!! Mais Vendidos em Computadores e Informática !!!</a><img
-                            src="//ir-br.amazon-adsystem.com/e/ir?t=mq18041999-20&l=ur2&o=33" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important; color: red; text-decoration: underline red;" />
-                        <div data-mvc-banner="medium-rectangle"></div><br> -->
+                <div class="portfolio-card">
+                    <div class="portfolio-card__image">
+                        <img src="images/famigu.png" alt="Famigu Plantas - Site Institucional" loading="lazy">
+                    </div>
+                    <div class="portfolio-card__content">
+                        <h3 class="portfolio-card__title">Famigu Plantas</h3>
+                        <p class="portfolio-card__description">
+                            Site profissional para viveiro de plantas com galeria de produtos,
+                            informações sobre a empresa e canal direto de contato com clientes.
+                        </p>
+                        <div class="portfolio-card__tags">
+                            <span class="tag">Site Empresarial</span>
+                            <span class="tag">Catálogo Online</span>
+                            <span class="tag">Responsivo</span>
+                        </div>
+                        <a href="https://famigu.github.io" target="_blank" class="portfolio-card__link"
+                            onclick="gtag('event', 'click', {'event_category': 'portfolio', 'event_label': 'Famigu'});">
+                            Ver Projeto →
+                        </a>
+                    </div>
+                </div>
 
+                <div class="portfolio-card">
+                    <div class="portfolio-card__image">
+                        <img src="images/plan-ref.png" alt="Documentação Técnica Interativa" loading="lazy">
+                    </div>
+                    <div class="portfolio-card__content">
+                        <h3 class="portfolio-card__title">Sistema de Documentação</h3>
+                        <p class="portfolio-card__description">
+                            Ferramenta web para organizar e consultar documentação técnica
+                            com busca inteligente e categorização automática de conteúdo.
+                        </p>
+                        <div class="portfolio-card__tags">
+                            <span class="tag">Sistema Web</span>
+                            <span class="tag">Busca Avançada</span>
+                            <span class="tag">Organização</span>
+                        </div>
+                        <a href="https://quost.github.io/planilha-referencias-html-css-js/" target="_blank"
+                            class="portfolio-card__link"
+                            onclick="gtag('event', 'click', {'event_category': 'portfolio', 'event_label': 'Planilha Ref'});">
+                            Ver Projeto →
+                        </a>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </section>
 
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Depoimentos</span>
+                <h2 class="section__title">O que nossos clientes dizem</h2>
+                <p class="section__subtitle">
+                    Resultados reais de empresas que confiaram em nosso trabalho
+                </p>
+            </div>
 
-    </div>
+            <div class="testimonials__grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-card__rating">
+                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                    </div>
+                    <p class="testimonial-card__text">
+                        "A MQDev transformou completamente nossa presença online. O site ficou
+                        profissional, rápido e já trouxe um aumento de 40% nas vendas em apenas 2 meses."
+                    </p>
+                    <div class="testimonial-card__author">
+                        <div class="author-avatar">
+                            <img src="images/avatar-placeholder.svg" alt="Cliente" loading="lazy">
+                        </div>
+                        <div class="author-info">
+                            <h4>Carlos Silva</h4>
+                            <p>Diretor Comercial - Urbs Mercado</p>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="testimonial-card">
+                    <div class="testimonial-card__rating">
+                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                    </div>
+                    <p class="testimonial-card__text">
+                        "Profissionalismo e agilidade excepcionais. O sistema desenvolvido
+                        automatizou processos que nos tomavam horas por dia. Recomendo!"
+                    </p>
+                    <div class="testimonial-card__author">
+                        <div class="author-avatar">
+                            <img src="images/avatar-placeholder.svg" alt="Cliente" loading="lazy">
+                        </div>
+                        <div class="author-info">
+                            <h4>Ana Paula Costa</h4>
+                            <p>CEO - Famigu Plantas</p>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- Loader -->
-    <div id="unslate_co--overlayer"></div>
-    <div class="site-loader-wrap">
-        <div class="site-loader"></div>
-    </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-card__rating">
+                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                    </div>
+                    <p class="testimonial-card__text">
+                        "Equipe altamente qualificada que entende as necessidades do cliente.
+                        Entregaram exatamente o que precisávamos, dentro do prazo e orçamento."
+                    </p>
+                    <div class="testimonial-card__author">
+                        <div class="author-avatar">
+                            <img src="images/avatar-placeholder.svg" alt="Cliente" loading="lazy">
+                        </div>
+                        <div class="author-info">
+                            <h4>Roberto Santos</h4>
+                            <p>Gerente de TI - Indústria XYZ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section stats">
+        <div class="container">
+            <div class="stats__grid">
+                <div class="stat-card">
+                    <div class="stat-card__number" data-target="50">0</div>
+                    <div class="stat-card__label">Projetos Entregues</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card__number" data-target="30">0</div>
+                    <div class="stat-card__label">Clientes Satisfeitos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card__number" data-target="7">0</div>
+                    <div class="stat-card__label">Anos de Experiência</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card__number" data-target="98">0</div>
+                    <div class="stat-card__suffix">%</div>
+                    <div class="stat-card__label">Taxa de Satisfação</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Dúvidas Frequentes</span>
+                <h2 class="section__title">Perguntas que sempre recebemos</h2>
+            </div>
+
+            <div class="faq__container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Quanto tempo leva para desenvolver um projeto?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor">
+                            <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>O prazo varia conforme a complexidade e escopo do projeto. Durante nossa conversa inicial,
+                            analisamos suas necessidades e apresentamos um cronograma personalizado e realista.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Quanto custa desenvolver um sistema/site?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor">
+                            <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Cada projeto é único e possui características específicas. Entre em contato conosco
+                            para uma avaliação personalizada e orçamento detalhado sem compromisso.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Vocês fazem manutenção após a entrega?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor">
+                            <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim! Oferecemos 30 dias de garantia gratuita após a entrega. Depois, você pode contratar
+                            pacotes de suporte mensal para manutenções, atualizações e melhorias contínuas.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Preciso fornecer hospedagem e domínio?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor">
+                            <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Podemos cuidar de tudo para você! Recomendamos e configuramos a hospedagem profissional
+                            ideal e auxiliamos na aquisição do domínio. Conversamos sobre as melhores opções para seu
+                            projeto.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Consigo fazer alterações no site depois?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor">
+                            <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim! Podemos integrar um painel administrativo (CMS) onde você edita textos, imagens e
+                            produtos
+                            facilmente. Também oferecemos treinamento para sua equipe usar o sistema.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Atendem empresas de outras cidades/estados?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor">
+                            <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Com certeza! Trabalhamos remotamente com clientes de todo o Brasil. Usamos videoconferências,
+                            WhatsApp e ferramentas online para comunicação eficiente durante o projeto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <!-- Como Trabalhamos Section -->
+    <section class="section how-we-work">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Nosso Processo</span>
+                <h2 class="section__title">Como trabalhamos com você</h2>
+                <p class="section__subtitle">
+                    Processo transparente e flexível, adaptado às necessidades do seu projeto.
+                </p>
+            </div>
+
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="process-step__number">01</div>
+                    <div class="process-step__content">
+                        <h3 class="process-step__title">Conversa inicial</h3>
+                        <p class="process-step__description">
+                            Entendemos seu negócio, objetivos e desafios. Reunião sem compromisso
+                            para alinhar expectativas e verificar se faz sentido trabalharmos juntos.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="process-step__number">02</div>
+                    <div class="process-step__content">
+                        <h3 class="process-step__title">Proposta personalizada</h3>
+                        <p class="process-step__description">
+                            Criamos um plano sob medida com escopo, cronograma e investimento.
+                            Cada projeto é único e merece atenção especial.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="process-step__number">03</div>
+                    <div class="process-step__content">
+                        <h3 class="process-step__title">Desenvolvimento colaborativo</h3>
+                        <p class="process-step__description">
+                            Trabalhamos em conjunto, com atualizações frequentes e feedback constante.
+                            Você acompanha o progresso e participa das decisões importantes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="process-step__number">04</div>
+                    <div class="process-step__content">
+                        <h3 class="process-step__title">Entrega e suporte</h3>
+                        <p class="process-step__description">
+                            Colocamos tudo no ar, treinamos sua equipe e ficamos disponíveis
+                            para garantir que tudo funcione perfeitamente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="section cta-final">
+        <div class="container">
+            <div class="cta-final__content">
+                <div class="cta-final__badge">
+                    <span class="pulse-dot"></span>
+                    <span>Disponível para novos projetos</span>
+                </div>
+                <h2 class="cta-final__title">
+                    Pronto para transformar sua ideia em realidade?
+                </h2>
+                <p class="cta-final__description">
+                    Entre em contato e vamos conversar sobre como podemos
+                    impulsionar seu negócio com soluções tecnológicas personalizadas.
+                </p>
+                <div class="cta-final__benefits">
+                    <div class="benefit-item">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7 10l2 2 4-4" stroke="#10b981" stroke-width="2" stroke-linecap="round" />
+                            <circle cx="10" cy="10" r="9" stroke="#10b981" stroke-width="2" />
+                        </svg>
+                        <span>Consulta sem compromisso</span>
+                    </div>
+                    <div class="benefit-item">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7 10l2 2 4-4" stroke="#10b981" stroke-width="2" stroke-linecap="round" />
+                            <circle cx="10" cy="10" r="9" stroke="#10b981" stroke-width="2" />
+                        </svg>
+                        <span>Proposta personalizada</span>
+                    </div>
+                    <div class="benefit-item">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7 10l2 2 4-4" stroke="#10b981" stroke-width="2" stroke-linecap="round" />
+                            <circle cx="10" cy="10" r="9" stroke="#10b981" stroke-width="2" />
+                        </svg>
+                        <span>Atendimento personalizado</span>
+                    </div>
+                </div>
+                <div class="cta-final__buttons">
+                    <a href="https://wa.me/5542991149052?text=Olá! Gostaria de conversar sobre meu projeto."
+                        class="btn btn-primary btn-large"
+                        onclick="gtag('event', 'click', {'event_category': 'cta', 'event_label': 'WhatsApp CTA Final'});">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                        </svg>
+                        <span>Falar no WhatsApp</span>
+                    </a>
+                    <a href="#contact" class="btn btn-outline btn-large">
+                        <span>Ou preencha o formulário</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Entre em Contato</span>
+                <h2 class="section__title">Vamos Conversar Sobre Seu Projeto</h2>
+            </div>
+
+            <div class="contact__grid">
+                <div class="contact__info">
+                    <h3>MQDev - Soluções em Tecnologia</h3>
+                    <p>Atendemos empresas de todo o Brasil com foco em qualidade, inovação e resultados.</p>
+
+                    <div class="contact__items">
+                        <div class="contact__item">
+                            <div class="contact__item-icon">📞</div>
+                            <div>
+                                <h4>Telefone / WhatsApp</h4>
+                                <a href="https://wa.me/5542991149052">+55 (42) 99114-9052</a>
+                            </div>
+                        </div>
+
+                        <div class="contact__item">
+                            <div class="contact__item-icon">✉️</div>
+                            <div>
+                                <h4>E-mail Comercial</h4>
+                                <a href="mailto:mqdev@pm.me">mqdev@pm.me</a>
+                            </div>
+                        </div>
+
+                        <div class="contact__item">
+                            <div class="contact__item-icon">📍</div>
+                            <div>
+                                <h4>Localização</h4>
+                                <p>Jaraguá do Sul, SC - Brasil</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact__form" action="https://formspree.io/f/mgenbvel" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="nome" placeholder="Seu Nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Seu E-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="telefone" placeholder="Telefone / WhatsApp">
+                    </div>
+                    <div class="form-group">
+                        <select name="servico" required>
+                            <option value="">Qual serviço você precisa?</option>
+                            <option value="site">Desenvolvimento Web</option>
+                            <option value="app">Aplicativo Mobile</option>
+                            <option value="sistema">Sistema Personalizado</option>
+                            <option value="integracao">APIs e Integrações</option>
+                            <option value="consultoria">Consultoria Técnica</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="mensagem" placeholder="Conte-nos sobre seu projeto" rows="5"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        Enviar Solicitação
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <div class="footer__logo">
+                        <span class="logo-text">MQ</span><span class="logo-accent">Dev</span>
+                    </div>
+                    <p class="footer__description">
+                        Desenvolvimento de software e sistemas sob medida.
+                        Transformando ideias em soluções tecnológicas de alto impacto.
+                    </p>
+                </div>
+
+                <div class="footer__col">
+                    <h4 class="footer__title">Serviços</h4>
+                    <ul class="footer__links">
+                        <li><a href="#services">Desenvolvimento Web</a></li>
+                        <li><a href="#services">Aplicativos Mobile</a></li>
+                        <li><a href="#services">APIs & Integrações</a></li>
+                        <li><a href="#services">Cloud & DevOps</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h4 class="footer__title">Empresa</h4>
+                    <ul class="footer__links">
+                        <li><a href="#portfolio">Nossos Projetos</a></li>
+                        <li><a href="/portfolio.html">Equipe</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                        <li><a href="#contact">Orçamento</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h4 class="footer__title">Contato</h4>
+                    <ul class="footer__links">
+                        <li>Jaraguá do Sul, SC</li>
+                        <li><a href="mailto:mqdev@pm.me">mqdev@pm.me</a></li>
+                        <li><a href="https://wa.me/5542991149052">+55 (42) 99114-9052</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2024 MQDev. Todos os direitos reservados.</p>
+                <div class="footer__social">
+                    <a href="https://github.com/mqdev" target="_blank" aria-label="GitHub">GitHub</a>
+                    <a href="https://linkedin.com/company/mqdev" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Scripts -->
-    <script src="js/scripts-dist.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/ads.js" data-cfasync="false" type="text/javascript"></script>
-    <script src="/ / gloumsee.net / ntfc.php ? p = 3556493 " data-cfasync="false " async onerror="_nyzoyeqz()" onload="_uvyry()"></script>
-    <script src="/ / cheeltee.net / ntfc.php ? p = 3556542 " data-cfasync="false " async onerror="_rnhfnf()" onload="_cydej()"></script>
-
+    <script src="js/mqdev-main.js"></script>
+    <script src="js/mqdev-interactions.js"></script>
+    <script src="js/mqdev-animations.js"></script>
 </body>
 
 </html>
