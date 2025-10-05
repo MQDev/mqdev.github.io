@@ -176,12 +176,17 @@ const imageObserver = new IntersectionObserver((entries, observer) => {
             const img = entry.target;
             
             // Adicionar efeito de fade-in
-            img.style.opacity = '0';
             img.style.transition = 'opacity 0.5s ease';
             
-            img.addEventListener('load', () => {
+            // Se a imagem já estiver carregada (cache), não precisa esperar o evento load
+            if (img.complete) {
                 img.style.opacity = '1';
-            });
+            } else {
+                img.style.opacity = '0';
+                img.addEventListener('load', () => {
+                    img.style.opacity = '1';
+                });
+            }
             
             observer.unobserve(img);
         }
